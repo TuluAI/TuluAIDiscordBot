@@ -15,7 +15,9 @@ tuludict = {
   "namaskara" : "Namaskara means Hello in Tulu",
   "illa" : "Illa means House in Tulu",
   "yenchina" : "Yenchina means Why in Tulu",
-  "olpa" : "Olpa means Where in Tulu"
+  "olpa" : "Olpa means Where in Tulu",
+  "amma" : "Amma means Mother in Tulu",
+  "Daye" : "Daye means Why in Tulu"
 }
 
 eng_to_tulu = {
