@@ -25,9 +25,11 @@ eng_to_tulu = {
   "yes" : "Andh",
   "name" : "Pudhar",
   "cow" : "Petha",
-  "chicken" : "kori",
-  "sad" : "bejara",
-  "happy" : "kushi"
+  "chicken" : "Kori",
+  "sad" : "Bejara",
+  "happy" : "Kushi",
+  "where" : "Olpa",
+  "why" : "Daye"
 
 }
 warning_words = [
