@@ -29,9 +29,36 @@ eng_to_tulu = {
   "sad" : "Bejara",
   "happy" : "Kushi",
   "where" : "Olpa",
-  "why" : "Daye"
-
+  "why" : "Daye",
+  "how" : "Encha",
+  "me" : "Yaan",
+  "we" : "Namma",
+  "hometown" : "Ooru",
+  "home" : "Illa",
+  "shop" : "Angadi",
+  "good" : "Edde",
+  "here" : "Mulpa",
+  "one" : "Onji",
+  "two" : "Rad",
+  "three" : "Muji",
+  "four" : "Naal",
+  "five" : "Ain",
+  "six" : "Aaji",
+  "seven" : "Ale",
+  "eight" : "Enma",
+  "nine" : "Ormba",
+  "ten" : "Path",
+  "sugarcane" : "Curmb",
+  "boy" : "Aan",
+  "girl" : "Ponnu",
+  "how are you" : "Yeer encha ullar?",
+  "what are you doing" : "Dada malthond ullar"
 }
+
+sentences = ' { "what are you doing?" : "Yeer dada malthond ullar?", "what is your name" : "Yeerna poodar dade?", "where are you from" : "Yeerna oor olpa?", "how are you?" : "Yeer encha ullar", "i am fine" : "Yaan ushaari ulle" } ' 
+
+load_sentences = json.loads(sentences);
+
 warning_words = [
   "WARNING : Please refrain from profanity",
   "WARNING : Mulpa bad words allowed ijji"
@@ -79,9 +106,16 @@ async def definition(ctx, args):
      #await ctx.send(tuludict.value)
 
 @bot.command(pass_contezt=True)
-async def translate(ctx, args):
+async def translateword(ctx, args):
     guild = ctx.guild
 
     await ctx.send(eng_to_tulu[args])
+
+@bot.command(pass_contezt=True)
+async def translatesentence(ctx, *, arg):
+    guild = ctx.guild
+
+    await ctx.send(load_sentences[arg])
+    
 #client.run(os.getenv('TOKEN')
 bot.run(os.getenv('TOKEN'))
