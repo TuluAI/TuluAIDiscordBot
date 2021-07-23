@@ -55,7 +55,7 @@ eng_to_tulu = {
   "what are you doing" : "Dada malthond ullar"
 }
 
-sentences = ' { "what are you doing?" : "Yeer dada malthond ullar?", "what is your name" : "Yeerna poodar dade?", "where are you from" : "Yeerna oor olpa?", "how are you?" : "Yeer encha ullar", "i am fine" : "Yaan ushaari ulle" } ' 
+sentences = ' { "what are you doing?" : "Yeer dada malthond ullar?", "what is your name?" : "Yeerna poodar dade?", "where are you from?" : "Yeerna oor olpa?", "how are you?" : "Yeer encha ullar", "i am fine" : "Yaan ushaari ulle" } ' 
 
 load_sentences = json.loads(sentences);
 
